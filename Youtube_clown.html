@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Youtube-Clown
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <style>
+        /* body{
+            background-color: black;
+            color: whitesmoke;
+        } */
+        .material-symbols-outlined {
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: Roboto, Arial;
+        }
+
+        .grid_display {
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            height: auto;
+            margin-left: 30px;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .main_img {
+            width: 300px;
+            height: auto;
+        }
+
+        .grid_text_boxes {
+            display: grid;
+            grid-template-columns: 70px 1fr;
+        }
+
+        .img_logo {
+            border-radius: 50px;
+            height: 50px;
+            margin-top: 8px;
+        }
+
+        .img_text {
+            vertical-align: top;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .description {
+            margin-top: 8px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .author,
+        .views {
+            font-size: 13px;
+            color: #606060;
+            font-weight: 400;
+        }
+
+        .author {
+            margin-top: 13px;
+        }
+
+        .author,
+        .views,
+        .description {
+            line-height: 18px;
+        }
+
+
+        .Home:hover {
+            background-color: rgb(235, 233, 233);
+            ;
+            opacity: 1.2;
+        }
+
+        .Explore:hover {
+            background-color: rgb(235, 233, 233);
+            ;
+            opacity: 1.2;
+        }
+
+        .Subscriptions:hover {
+            background-color: rgb(235, 233, 233);
+            ;
+            opacity: 1.2;
+        }
+
+        .play_circle:hover {
+            background-color: rgb(235, 233, 233);
+            ;
+            opacity: 1.2;
+        }
+
+        .library_music:hover {
+            background-color: rgb(235, 233, 233);
+            ;
+            opacity: 1.2;
+        }
+
+        .video_library:hover {
+            background-color: rgb(235, 233, 233);
+            ;
+            opacity: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div style="display: flex; flex-direction: row; height: 57px; background-color: rgb(255, 255, 255);">
+        <div style=" width: 300px; display: flex; flex-direction: row; height: 57px; margin: 0;">
+            <div style="width: 60px;">
+                <span class="material-symbols-outlined"
+                    style=" align-items: center; margin-left: 22px; margin-top: 13px;  cursor: pointer;">menu</span>
+            </div>
+            <div>
+                <img src="youtube_img.svg" alt=""
+                    style="height: 20px; margin-left: 40px; margin-top: 17px;  cursor: pointer;">
+            </div>
+        </div>
+
+        <div style="width: 580px; display: flex; flex-direction: row; height: 57px; margin: 0;">
+            <div style="width: 355px;">
+                <input type="text" placeholder="Search"
+                    style="width: 338px; height: 40px; margin-top: 5px; margin-left: 10px; font-size: 18px;">
+            </div>
+            <div>
+                <button style="height: 45px; width: 65px; margin-top: 5px; cursor: pointer;">
+                    <span class="material-symbols-outlined" style="margin-top: 7px; margin-left: 0;">search</span>
+                </button>
+            </div>
+            <div>
+                <button
+                    style="margin-top: 5px; margin-left: 10px; border-radius: 100%; height: 43px; border-color: white; cursor: pointer;">
+                    <span class="material-symbols-outlined" style="margin-top: 7px; margin-left: 0;">mic</span>
+                </button>
+            </div>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: row; gap: 5px;">
+            <div style=" margin-left: 300px; width: 45px;  margin-top: 0px;">
+                <span class="material-symbols-outlined" style="margin-top: 15px;  cursor: pointer;">add_to_queue</span>
+            </div>
+            <div style="width: 45px;  margin-top: 0px;">
+                <span class="material-symbols-outlined" style="margin-top: 15px;  cursor: pointer;">apps</span>
+            </div>
+            <div style="width: 45px;  margin-top: 0px;">
+                <span class="material-symbols-outlined" style="margin-top: 15px;  cursor: pointer;">notifications</span>
+            </div>
+            <div style="width: 45px;  cursor: pointer;">
+                <img src="youtube_icon_img.jpg" alt=""
+                    style="border-radius: 20px; margin-top: 12px; height: 33px; margin-left: 13px;">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div style="display: grid; grid-template-columns: 80px 1fr; height: 830px; gap: 1px; margin-top: 1px; ">
+        <div style="background-color: rgb(255, 255, 255);  ">
+            <div style="display: flex; flex-direction: column; width: 74px; gap: 20px; font-size: 10px; cursor: pointer;"
+                class="icons">
+                <div style="height: 70px;" class="Home">
+                    <span class="material-symbols-outlined">home</span>
+                    <p style="text-align: center;">Home</p>
+                </div>
+                <div style="height: 70px;" class="Explore">
+                    <span class="material-symbols-outlined">explore</span>
+                    <p style="text-align: center;">Explore</p>
+                </div>
+                <div style="height: 70px;" class="Subscriptions">
+                    <span class="material-symbols-outlined">subscriptions</span>
+                    <p style="text-align: center;">Subscriptions</p>
+                </div>
+                <div style="height: 70px;" class="play_circle">
+                    <span class="material-symbols-outlined">play_circle</span>
+                    <p style="text-align: center;">Orginals</p>
+                </div>
+                <div style="height: 70px;" class="library_music">
+                    <span class="material-symbols-outlined">library_music</span>
+                    <p style="text-align: center;">Youtube Music</p>
+                </div>
+                <div style="height: 70px;" class="video_library">
+                    <span class="material-symbols-outlined">video_library</span>
+                    <p style="text-align: center;">Library</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        <div style="background-color: rgba(0, 0, 0, 0);  opacity: 0.9;">
+            <div class="grid_display">
+
+                <div>
+                    <img src="img-1_sunder_pichai.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_1_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">Talking Tech and AI with Google CEO Sundar Pichai</p>
+                            <p class="author">Marques Brownlee</p>
+                            <p class="views">3.4M views &#183 6 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="don't_laugh_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_2_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">Try not to Laugh Challenge #9 </p>
+                            <p class="author">Markiplier</p>
+                            <p class="views">19M views &#183 4 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="tik-tok_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_3_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">Crazy Tik Toks Taken Moments Before DISASTER</p>
+                            <p class="author">SSSniper Wolf</p>
+                            <p class="views">12M views &#183 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="MrBeast_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_5_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">Anything You Can Fit In The Circle I'll Pay For</p>
+                            <p class="author">Mr Beast</p>
+                            <p class="views">141M views &#183 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="kadane_algorithm_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_4_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                            <p class="author">CS Dojo</p>
+                            <p class="views">519K views &#183 5 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="plane_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_6_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">Inside The World's Biggest Passenger Plane</p>
+                            <p class="author">Tech Vision</p>
+                            <p class="views">3.7M views &#183 10 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="super_human_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_7_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">The SECRET to Super Human STRENGTH/p>
+                            <p class="author">ThenX</p>
+                            <p class="views">20M views &#183 3 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="underwater_train_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_9_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+                            <p class="author">Destination Tips</p>
+                            <p class="views">3M views &#183 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="world's_largest_cruise_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_8_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
+                            <p class="author">Business Insider</p>
+                            <p class="views">14M views &#183 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="math_problem_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_10_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                            <p class="author">Veritasium</p>
+                            <p class="views">18M views &#183 4 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img src="planes_dont_fly_img.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_11_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">Why Planes Don't Fly Over Tibet</p>
+                            <p class="author">RealLifeLore</p>
+                            <p class="views">6.6M views &#183 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="water_drink.webp" alt="" class="main_img">
+                    <div class="grid_text_boxes">
+                        <div>
+                            <img src="img_12_logo.jpeg" alt="" class="img_logo">
+                        </div>
+                        <div class="img_text">
+                            <p class="description">What would happen if you didn’t drink water? - Mia Nacamulli</p>
+                            <p class="author">TED-Ed</p>
+                            <p class="views">12M views &#183 5 years ago</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
